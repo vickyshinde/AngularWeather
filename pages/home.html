@@ -3,11 +3,11 @@
         <h3>
             Forecast by city
         </h3>
-        <div class="form-group">
-            <input type="text" ng-model="city" class="form-control" />
-        </div>
-        <a href="#/forecast" class="btn btn-primary">
-            Get Forcast
-        </a>
+        <form ng-submit="submit()">
+            <div class="form-group">
+                <input type="text" ng-model="city" class="form-control" />
+            </div>
+            <input type="submit" class="btn btn-primary" value="Get Forcast" />
+        </form>
     </div>
 </div>
